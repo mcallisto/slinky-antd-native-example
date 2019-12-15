@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Antd native example",
-    "description": "A template setting up Expo with Slinky and Scala.js",
+    "description": "Antd native example with Slinky and ScalablyTyped",
     "slug": "slinky-antd-native-example",
     "privacy": "public",
     "sdkVersion": "34.0.0",
