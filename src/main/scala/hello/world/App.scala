@@ -40,7 +40,7 @@ import typings.atBang88ReactDashNativeDashDrawerDashLayout.atBang88ReactDashNati
         )(
           List(ListProps(renderHeader = Text()("List header").toST))(
             ListItem(ListItemProps(
-              arrow = antdStrings.horizontal,
+              extra = Icon(IconProps(name = "menu")).toST,
               onPress = _ => ref.asInstanceOf[DrawerLayout].openDrawer()))("Open drawer"),
             ListItem(ListItemProps(
               arrow = antdStrings.horizontal,

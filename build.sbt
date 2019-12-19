@@ -6,12 +6,15 @@ scalaVersion := "2.12.8"
 
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
 
-libraryDependencies += "me.shadaj" %%% "slinky-native" % "0.6.3"
-libraryDependencies += "me.shadaj" %%% "slinky-hot" % "0.6.3"
-libraryDependencies += ScalablyTyped.A.`ant-design__react-native`
-libraryDependencies += ScalablyTyped.A.`ant-design__icons-react-native`
-libraryDependencies += ScalablyTyped.B.`bang88__react-native-drawer-layout`
-libraryDependencies += ScalablyTyped.A.`antd-native-slinky-facade`
+libraryDependencies ++= Seq(
+  "me.shadaj" %%% "slinky-native" % "0.6.3",
+  "me.shadaj" %%% "slinky-hot" % "0.6.3",
+  ScalablyTyped.A.`ant-design__react-native`,
+  ScalablyTyped.A.`ant-design__icons-react-native`,
+  ScalablyTyped.B.`bang88__react-native-drawer-layout`,
+  ScalablyTyped.A.`antd-native-slinky-facade`,
+  ScalablyTyped.E.`expo-font`
+)
 
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 
