@@ -7,8 +7,9 @@ import slinky.core.annotations.react
 import slinky.core.facade.ReactElement
 import slinky.native.Text
 
-import typings.expoDashFont.expoDashFontMod.FontSource
-import typings.expoDashFont.{expoDashFontMod => Font}
+import typings.expo.components.AppLoading
+import typings.expoFont.mod.FontSource
+import typings.expoFont.{mod => Font}
 
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.scalajs.js
@@ -43,6 +44,6 @@ class LoadFonts extends Component {
     state.result match {
       case Some(Right(_))    => App()
       case Some(Left(value)) => Text()(s"Could not load fonts: $value")
-      case None              => Text()
+      case None              => AppLoading.AnonAutoHideSplash()
     }
 }
